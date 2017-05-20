@@ -1,0 +1,11 @@
+Hi,
+
+Please find screenshots in Screenshots folder.
+Please find APK file in the APK folder and install it.
+This app has been developed as per your requirement.
+Added search button on action bar.
+Added my portfolio also. Please take a look into that.
+
+Note: To reduce zip file size to avoid uploading probelm into hacke earth, removed build files.
+
+Thanks

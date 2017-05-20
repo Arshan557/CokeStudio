@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    tools:context="com.arshan.cokestudio.MainActivity">
+
+    <item
+        android:id="@+id/download_profile"
+        android:orderInCategory="100"
+        android:title="Download Portfolio"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/linkedIn"
+        android:orderInCategory="100"
+        android:title="LinkedIn Profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/call"
+        android:orderInCategory="100"
+        android:title="Call Sudarshan"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        android:title="action_search"
+        myapp:showAsAction="always|collapseActionView"
+        myapp:actionViewClass="android.support.v7.widget.SearchView" />
+
+</menu>

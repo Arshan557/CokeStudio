@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logos"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingRight="2dp"
+            android:src="@drawable/edforalogo"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/cokelogo"/>
+    </LinearLayout>
+    <TextView android:text="Music Palyer" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songTitle"
+        android:textSize="35dp"
+        android:paddingLeft="2dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/logos"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artists"
+        android:id="@+id/artists"
+        android:layout_below="@+id/songTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cover"
+        android:paddingTop="25dp"
+        android:layout_below="@+id/artists"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/controls"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/previous"
+            android:src="@drawable/rewind"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/play"
+            android:src="@drawable/play"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pause"
+            android:src="@drawable/pause"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/stop"
+            android:src="@drawable/stop"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/next"
+            android:src="@drawable/forward"/>
+    </LinearLayout>
+
+    <!--<SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignLeft="@+id/songTitle"
+        android:layout_alignStart="@+id/songTitle"
+        android:layout_alignRight="@+id/songTitle"
+        android:layout_alignEnd="@+id/songTitle"
+        android:layout_above="@+id/controls" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="current duration"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="total duration"
+        android:id="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/seekBar" />-->
+
+</RelativeLayout>
